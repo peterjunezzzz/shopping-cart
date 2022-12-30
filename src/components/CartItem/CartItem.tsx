@@ -1,7 +1,12 @@
 import React from 'react'
+import { apiType } from '../apiType'
 import style from './CartItem.module.css'
 
-function CartItem() {
+
+
+interface CartItemProps extends apiType {setapiData:Function,apiData:apiType[]}
+
+function CartItem(props:CartItemProps) {
   return (
     <div className={style.container}>
         <div className={style.leftContainer}>

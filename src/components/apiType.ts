@@ -1,13 +1,13 @@
-export type apiType = {
+export interface apiType  {
     category:string;
     description:string;
     id:number;
     image:string;
     price:number;
-    rating:rating;
+    rating:{rate:number;count:number};
     title:string;
+    amount:number;
 
 
 }
 
-type rating = {rate:number;count:number}

@@ -4,3 +4,7 @@
   首先:把側邊選單欄tranform:translate  到屏幕外
   再來:把input標籤寫在側邊欄div上，形成兄弟關係
   最後:當input被勾選時(偽類:checked)，使用兄弟選取器+ 選到下方側邊欄div，再把它tranform:translate回屏幕內
+
+複數className的寫法  className={`${name1} ${name2}`}
+
+禁止用戶選取文本 user-select: none

@@ -39,6 +39,9 @@ div.number{
     font-weight: 600;
     color: rgb(243, 245, 241);
     font-size: 15px;
+    transition: all 0.2s;
+    opacity: 1;
+    transform: scale(1);
 }
 .toggleMenu{
     position: fixed;
@@ -53,15 +56,24 @@ div.number{
 }
 div.itemList{
     width: 550px;
-    height: 100vh;
+    
+    height:calc(100vh - 75px);
+    overflow: auto;
     position: fixed;
     right: 0px;
-    top: 75px;
-    background-color: rgb(129, 221, 252);
+    top:  75px;
+    background-color: rgba(255,255,255,0.9);
     transform: translateX(100%);
     visibility: hidden;
     z-index:3 ;
     transition: all 0.3s;
+}
+div.TotalDollar{
+    margin-top: 15px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 25px;
+    background-color: aqua;
 }
 .shadow{
     background-color: rgba(0,0,0,0.5);
